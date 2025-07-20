@@ -57,36 +57,143 @@
 
 @section('content')
     <!-- Hero Section -->
-    <div class="relative h-screen">
+    <div class="relative h-screen" id="hero">
         <div class="absolute inset-0">
             <img src="{{ asset('images/1.png') }}" alt="Kampung Skouw Yambe" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-black/50"></div>
         </div>
         <div class="relative max-w-7xl mx-auto px-4 h-full flex items-center">
-            <div class="text-white">
-                <h1 class="text-4xl md:text-5xl font-bold mb-4">
-                    <span class="inline-block animate-slide-in-right">Selamat Datang di</span>
-                    <span class="inline-block animate-slide-in-left animation-delay-200">Kampung Skouw Yambe</span>
+            <div class="text-white w-full">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4 text-center">
+                    Selamat Datang di Website Resmi Kampung Skouw Yambe, Kecamatan Muara Tami, Kota Jayapura, Papua
                 </h1>
-                <p class="text-base md:text-lg mb-6 animate-fade-in-up animation-delay-200 max-w-xl">
-                    Kampung yang terletak di perbatasan Indonesia-Papua Nugini dengan keindahan alam 
-                    dan kekayaan budaya yang unik.
+                <p class="text-base md:text-lg mb-6 max-w-2xl mx-auto text-center">
+                    Kampung Skouw Yambe adalah salah satu kampung di Kecamatan Muara Tami, Kota Jayapura, Papua. Kampung ini dikenal dengan keindahan alam, kekayaan budaya, dan potensi UMKM yang berkembang. Masyarakatnya hidup rukun, menjaga tradisi, dan aktif dalam berbagai kegiatan pembangunan kampung. Website ini menjadi pusat informasi resmi, berita, dan layanan digital untuk seluruh warga dan pengunjung Kampung Skouw Yambe.
                 </p>
-                <div class="animate-fade-in-up animation-delay-400">
-                    <button onclick="window.location.href='#tentang'" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-md transition-colors duration-300">
-                        Jelajahi Kampung Kami
-                    </button>
+                <div class="flex flex-wrap justify-center gap-4 mb-8">
+                    <a href="#jelajahi" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-md transition-colors duration-300">Jelajahi Desa</a>
+                    <a href="/profil" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-md transition-colors duration-300">Profil</a>
+                    <a href="/umkm" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-md transition-colors duration-300">UMKM</a>
+                    <a href="/berita" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-md transition-colors duration-300">Berita</a>
+                    <a href="/kontak" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-md transition-colors duration-300">Kontak</a>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Section Jelajahi Desa (anchor) -->
+    <section id="jelajahi" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-green-800">Jelajahi Kampung Skouw Yambe</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+                <a href="#sambutan" class="block p-6 rounded-xl shadow hover:shadow-lg bg-green-50 hover:bg-green-100 transition">
+                    <span class="text-lg font-semibold text-green-700">Sambutan Kepala Kampung</span>
+                </a>
+                <a href="#map" class="block p-6 rounded-xl shadow hover:shadow-lg bg-green-50 hover:bg-green-100 transition">
+                    <span class="text-lg font-semibold text-green-700">Peta Kampung</span>
+                </a>
+                <a href="#struktur" class="block p-6 rounded-xl shadow hover:shadow-lg bg-green-50 hover:bg-green-100 transition">
+                    <span class="text-lg font-semibold text-green-700">Struktur Organisasi</span>
+                </a>
+                <a href="#administrasi" class="block p-6 rounded-xl shadow hover:shadow-lg bg-green-50 hover:bg-green-100 transition">
+                    <span class="text-lg font-semibold text-green-700">Administrasi Penduduk</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Sambutan Kepala Kampung -->
+    <section id="sambutan" class="py-20 bg-gray-50">
+        <div class="max-w-3xl mx-auto px-4 text-center">
+            <img src="/images/kepala-kampung.jpg" alt="Kepala Kampung" class="mx-auto w-32 h-32 rounded-full object-cover mb-6 shadow-lg">
+            <h2 class="text-2xl font-bold mb-2 text-green-700">Sambutan Kepala Kampung</h2>
+            <p class="text-lg text-gray-700 mb-4">Assalamu'alaikum warahmatullahi wabarakatuh, Salam sejahtera untuk kita semua. Selamat datang di website resmi Kampung Skouw Yambe. Semoga website ini menjadi jendela informasi, komunikasi, dan pelayanan publik yang bermanfaat bagi seluruh warga dan pengunjung. Mari bersama membangun kampung yang maju, sejahtera, dan berbudaya.</p>
+            <p class="font-semibold text-green-800">Yulianus Wambrauw<br><span class="text-sm font-normal text-gray-600">Kepala Kampung Skouw Yambe</span></p>
+        </div>
+    </section>
+
+    <!-- Section Map Kampung -->
+    <section id="map" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8 text-green-800">Peta Kampung Skouw Yambe</h2>
+            <div class="w-full h-96 rounded-xl overflow-hidden shadow-lg mb-8">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.9999999999995!2d140.6!3d-2.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x686c3b3b3b3b3b3b%3A0x3b3b3b3b3b3b3b3b!2sKampung%20Skouw%20Yambe%2C%20Muara%20Tami%2C%20Jayapura%2C%20Papua!5e0!3m2!1sid!2sid!4v1234567890!5m2!1sid!2sid&maptype=satellite" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="text-center">
+                <a href="https://www.google.com/maps?q=-2.612338,140.850206" target="_blank" class="inline-block bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg text-lg font-medium transition duration-300">Lihat di Google Maps</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Struktur Organisasi -->
+    <section id="struktur" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8 text-green-800">Struktur Organisasi Kampung</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center">
+                    <img src="/images/kepala-kampung.jpg" alt="Kepala Kampung" class="w-24 h-24 object-cover rounded-full mb-4">
+                    <h3 class="text-lg font-bold text-green-700 mb-1">Yulianus Wambrauw</h3>
+                    <p class="text-gray-600">Kepala Kampung</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center">
+                    <img src="/images/sekretaris.jpg" alt="Sekretaris Kampung" class="w-24 h-24 object-cover rounded-full mb-4">
+                    <h3 class="text-lg font-bold text-green-700 mb-1">Maria Kambuaya</h3>
+                    <p class="text-gray-600">Sekretaris Kampung</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center">
+                    <img src="/images/kaur-pemerintahan.jpg" alt="Kaur Pemerintahan" class="w-24 h-24 object-cover rounded-full mb-4">
+                    <h3 class="text-lg font-bold text-green-700 mb-1">Markus Kossay</h3>
+                    <p class="text-gray-600">Kaur Pemerintahan</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center">
+                    <img src="/images/kaur-keuangan.jpg" alt="Kaur Keuangan" class="w-24 h-24 object-cover rounded-full mb-4">
+                    <h3 class="text-lg font-bold text-green-700 mb-1">Yohana Wambrauw</h3>
+                    <p class="text-gray-600">Kaur Keuangan</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center">
+                    <img src="/images/kaur-umum.jpg" alt="Kaur Umum" class="w-24 h-24 object-cover rounded-full mb-4">
+                    <h3 class="text-lg font-bold text-green-700 mb-1">Simon Kambuaya</h3>
+                    <p class="text-gray-600">Kaur Umum</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Administrasi Penduduk -->
+    <section id="administrasi" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8 text-green-800">Administrasi Penduduk</h2>
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div class="bg-green-50 rounded-xl shadow-lg p-6">
+                    <h3 class="text-lg font-bold text-green-700 mb-2">Jumlah Penduduk</h3>
+                    <p class="text-3xl font-bold text-gray-900">800</p>
+                    <p class="text-gray-600">Jiwa</p>
+                </div>
+                <div class="bg-green-50 rounded-xl shadow-lg p-6">
+                    <h3 class="text-lg font-bold text-green-700 mb-2">Kepala Keluarga</h3>
+                    <p class="text-3xl font-bold text-gray-900">200</p>
+                    <p class="text-gray-600">KK</p>
+                </div>
+                <div class="bg-green-50 rounded-xl shadow-lg p-6">
+                    <h3 class="text-lg font-bold text-green-700 mb-2">Laki-laki</h3>
+                    <p class="text-3xl font-bold text-gray-900">400</p>
+                    <p class="text-gray-600">Jiwa</p>
+                </div>
+                <div class="bg-green-50 rounded-xl shadow-lg p-6">
+                    <h3 class="text-lg font-bold text-green-700 mb-2">Perempuan</h3>
+                    <p class="text-3xl font-bold text-gray-900">400</p>
+                    <p class="text-gray-600">Jiwa</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Potensi Section -->
     <section class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-12 text-gray-900">Potensi Kampung</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-gray-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                <div class="bg-gray-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 border-2 border-green-400 border-opacity-60 hover:border-green-600 hover:border-4 bg-gradient-to-br from-white via-green-50 to-green-100">
                     <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
                         <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
@@ -95,7 +202,7 @@
                     <h3 class="text-xl font-semibold mb-2">Pertanian</h3>
                     <p class="text-gray-600">Kampung Skouw Yambe memiliki lahan pertanian yang subur dengan hasil panen melimpah.</p>
                 </div>
-                <div class="bg-gray-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                <div class="bg-gray-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 border-2 border-green-400 border-opacity-60 hover:border-green-600 hover:border-4 bg-gradient-to-br from-white via-green-50 to-green-100">
                     <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
                         <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
@@ -104,7 +211,7 @@
                     <h3 class="text-xl font-semibold mb-2">Pariwisata</h3>
                     <p class="text-gray-600">Destinasi wisata alam yang menawarkan pemandangan indah dan pengalaman budaya.</p>
                 </div>
-                <div class="bg-gray-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                <div class="bg-gray-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 border-2 border-green-400 border-opacity-60 hover:border-green-600 hover:border-4 bg-gradient-to-br from-white via-green-50 to-green-100">
                     <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
                         <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>

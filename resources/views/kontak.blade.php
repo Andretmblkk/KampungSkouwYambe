@@ -150,7 +150,7 @@
                                 </div>
                                 <div>
                                     <h3 class="text-lg font-semibold text-gray-900">Telepon</h3>
-                                    <p class="text-gray-600">+62 812-3456-7890</p>
+                                    <p class="text-gray-600">0822-5034-5977</p>
                                 </div>
                             </div>
                             <div class="flex items-start space-x-4">
@@ -161,7 +161,7 @@
                                 </div>
                                 <div>
                                     <h3 class="text-lg font-semibold text-gray-900">Email</h3>
-                                    <p class="text-gray-600">info@skouwyambe.id</p>
+                                    <p class="text-gray-600">alfiandwiprasetyo236@gmail.com</p>
                                 </div>
                             </div>
                         </div>
@@ -197,9 +197,15 @@
                     <!-- Map -->
                     <div class="bg-white rounded-xl shadow-lg p-8">
                         <h2 class="text-2xl font-bold mb-6 text-gray-900">Lokasi</h2>
+                        <h3 class="text-xl font-semibold mb-4">Jam Layanan</h3>
+                        <ul class="text-gray-600 space-y-2">
+                            <li>Senin - Jumat: 08:00 - 16:00</li>
+                            <li>Sabtu: 08:00 - 12:00</li>
+                            <li>Minggu & Tanggal Merah: Tutup</li>
+                        </ul>
                         <div class="aspect-w-16 aspect-h-9">
                             <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.9999999999995!2d140.6!3d-2.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x686c3b3b3b3b3b3b%3A0x3b3b3b3b3b3b3b3b!2sKampung%20Skouw%20Yambe%2C%20Distrik%20Muara%20Tami%2C%20Kota%20Jayapura%2C%20Papua!5e0!3m2!1sid!2sid!4v1234567890!5m2!1sid!2sid&maptype=satellite" 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.9999999999995!2d111.6!3d-0.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e0e5b3b3b3b3b3b%3A0x3b3b3b3b3b3b3b3b!2sDesa%20Tamang%2C%20Nanga%20Taman%2C%20Kabupaten%20Sekadau%2C%20Kalimantan%20Barat!5e0!3m2!1sid!2sid!4v1234567890!5m2!1sid!2sid&maptype=satellite" 
                                 class="w-full h-full rounded-lg"
                                 style="border:0;" 
                                 allowfullscreen="" 
