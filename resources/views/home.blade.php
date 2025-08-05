@@ -13,13 +13,13 @@
         // Membuat peta dengan zoom level yang lebih dekat
         const map = L.map('map').setView(skouwYambe, 16);
 
-        // Menambahkan tile layer satelit dari Google
+        
         L.tileLayer('https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
             attribution: '&copy; <a href="https://www.google.com/maps">Google Maps</a>',
             maxZoom: 20
         }).addTo(map);
 
-        // Menambahkan marker dengan ikon kustom
+       
         const marker = L.marker(skouwYambe, {
             title: "Kampung Skouw Yambe"
         }).addTo(map);
@@ -59,7 +59,7 @@
     <!-- Hero Section -->
     <div class="relative h-screen" id="hero">
         <div class="absolute inset-0">
-            <img src="{{ asset('images/1.png') }}" alt="Kampung Skouw Yambe" class="w-full h-full object-cover">
+            <img src="{{ asset('images/KAMPUNG.JPG') }}" alt="Kampung Skouw Yambe" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-black/50"></div>
         </div>
         <div class="relative max-w-7xl mx-auto px-4 h-full flex items-center">
@@ -107,8 +107,8 @@
         <div class="max-w-3xl mx-auto px-4 text-center">
             <img src="/images/kepala-kampung.jpg" alt="Kepala Kampung" class="mx-auto w-32 h-32 rounded-full object-cover mb-6 shadow-lg">
             <h2 class="text-2xl font-bold mb-2 text-green-700">Sambutan Kepala Kampung</h2>
-            <p class="text-lg text-gray-700 mb-4">Assalamu'alaikum warahmatullahi wabarakatuh, Salam sejahtera untuk kita semua. Selamat datang di website resmi Kampung Skouw Yambe. Semoga website ini menjadi jendela informasi, komunikasi, dan pelayanan publik yang bermanfaat bagi seluruh warga dan pengunjung. Mari bersama membangun kampung yang maju, sejahtera, dan berbudaya.</p>
-            <p class="font-semibold text-green-800">Yulianus Wambrauw<br><span class="text-sm font-normal text-gray-600">Kepala Kampung Skouw Yambe</span></p>
+            <p class="text-lg text-gray-700 mb-4"> Salam sejahtera untuk kita semua. Selamat datang di website resmi Kampung Skouw Yambe. Semoga website ini menjadi jendela informasi, komunikasi, dan pelayanan publik yang bermanfaat bagi seluruh warga dan pengunjung. Mari bersama membangun kampung yang maju, sejahtera, dan berbudaya.</p>
+            <p class="font-semibold text-green-800"><br>MARSHELUS MEMBILONG<span class="text-sm font-normal text-gray-600">Kepala Kampung Skouw Yambe</span></p>
         </div>
     </section>
 
@@ -131,31 +131,46 @@
             <h2 class="text-3xl font-bold text-center mb-8 text-green-800">Struktur Organisasi Kampung</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center">
-                    <img src="/images/kepala-kampung.jpg" alt="Kepala Kampung" class="w-24 h-24 object-cover rounded-full mb-4">
-                    <h3 class="text-lg font-bold text-green-700 mb-1">Yulianus Wambrauw</h3>
-                    <p class="text-gray-600">Kepala Kampung</p>
+                    <img src="/images/CONTOH.png" alt="Kepala Kampung" class="w-120 h-120 object-cover rounded-full mb-2">
+                    <h3 class="text-lg font-bold text-green-700 mb-1">marshelus membilong</h3>
+                    <p class="text-gray-600">KEPALA KAMPUNG</p>
                 </div>
                 <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center">
                     <img src="/images/sekretaris.jpg" alt="Sekretaris Kampung" class="w-24 h-24 object-cover rounded-full mb-4">
-                    <h3 class="text-lg font-bold text-green-700 mb-1">Maria Kambuaya</h3>
-                    <p class="text-gray-600">Sekretaris Kampung</p>
+                    <h3 class="text-lg font-bold text-green-700 mb-1">yansen patipeme</h3>
+                    <p class="text-gray-600">SEKRETARIS KAMPUNG</p>
                 </div>
                 <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center">
-                    <img src="/images/kaur-pemerintahan.jpg" alt="Kaur Pemerintahan" class="w-24 h-24 object-cover rounded-full mb-4">
-                    <h3 class="text-lg font-bold text-green-700 mb-1">Markus Kossay</h3>
-                    <p class="text-gray-600">Kaur Pemerintahan</p>
+                    <img src="/images/kaur-pemerintahan.jpg" alt="Kaur Pemerintahan" class="w-120 h-120 object-cover rounded-full mb-4">
+                    <h3 class="text-lg font-bold text-green-700 mb-1">CHHRISTOFEL ROLLO </h3>
+                    <p class="text-gray-600">KEPALA SEKSI PEMERINTAHAN</p>
                 </div>
                 <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center">
                     <img src="/images/kaur-keuangan.jpg" alt="Kaur Keuangan" class="w-24 h-24 object-cover rounded-full mb-4">
-                    <h3 class="text-lg font-bold text-green-700 mb-1">Yohana Wambrauw</h3>
-                    <p class="text-gray-600">Kaur Keuangan</p>
+                    <h3 class="text-lg font-bold text-green-700 mb-1">NELLY P. RUMANASEN</h3>
+                    <p class="text-gray-600">KEPALA SEKSI KESEJATERAAN MASYARAKAT</p>
                 </div>
                 <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center">
                     <img src="/images/kaur-umum.jpg" alt="Kaur Umum" class="w-24 h-24 object-cover rounded-full mb-4">
-                    <h3 class="text-lg font-bold text-green-700 mb-1">Simon Kambuaya</h3>
-                    <p class="text-gray-600">Kaur Umum</p>
+                    <h3 class="text-lg font-bold text-green-700 mb-1">DENISIUS ROLLO</h3>
+                    <p class="text-gray-600">KEPALA SEKSI PELAYANAN</p>
                 </div>
-            </div>
+                <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center">
+                    <img src="/images/kaur-pembangunan.jpg" alt="Kaur Pembangunan" class="w-24 h-24 object-cover rounded-full mb-4">
+                    <h3 class="text-lg font-bold text-green-700 mb-1">EUNIKE PATIPEME, SE</h3>K
+                    <p class="text-gray-600">KEPALA URUSAN KEUANGAN</p>
+            </div>  
+            <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center">
+                    <img src="/images/kaur-pembangunan.jpg" alt="Kaur Pembangunan" class="w-24 h-24 object-cover rounded-full mb-4">
+                    <h3 class="text-lg font-bold text-green-700 mb-1">GEORGE T PATIPEME, SJP</h3>
+                    <p class="text-gray-600">KEPALA URUSAN UMUM</p>
+            </div>  
+                </div class=bg-white rounded-xl shadow-lg p-6 flex flex-col  item-center">
+                     <img src="/images/kaur-.jpg alt="kaur perencanaa" class="w-24 h-24 object-cover rounded-full mb4">
+                     <h3 class="text-lg font-bold text-green-700 mb-1">DODY P DOLENG, S.JP</h3>
+                     <p class="text-gray-600">KEPALA URUSAN PERENCAAN DAN PEMBANGUNAN</p>
+             
+
         </div>
     </section>
 
